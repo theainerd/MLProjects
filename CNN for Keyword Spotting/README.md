@@ -1,5 +1,5 @@
-# Project Name
-Short Project Description
+# Convolutional Neural Network for Keyword Spotting
+I have used the Speech Commands Dataset to build an algorithm that understands simple spoken commands.
 
 ### Install
 
@@ -8,7 +8,6 @@ This project requires **Python3** and the following Python libraries installed:
 - [NumPy](http://www.numpy.org/)
 - [Pandas](http://pandas.pydata.org)
 - [matplotlib](http://matplotlib.org/)
-- [nltk](https://www.nltk.org/)
 - [Tensorflow](https://www.tensorflow.org/)
 - [Keras](https://keras.io/)
 
@@ -16,42 +15,38 @@ You will also need to have software installed to run and execute a [Jupyter Note
 
 If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included
 
-### Code
+## Project Structure
+- data
+	- raw
+		- train (Training audio files)
+		- test (Test audio files used for evaluation
+- libs
+	- classification (All scripts used for training and evaluation)
+-  notebooks
+- scripts (Executable scripts)
+- models (Pretrained Models)
 
-Template code is provided in the notebook `titanic_survival_exploration.ipynb` notebook file. 
 
 ### Run
 
-In a terminal or command window, navigate to the top-level project directory `` (that contains this README) and run one of the following commands:
+Download the Speech Commands Dataset and extract the dataset in the train folder. Test Audio can be placed in data/test/audio folder.
 
-```bash
-jupyter notebook __.ipynb
-```
-or
-```bash
-ipython notebook __.ipynb
-```
+The notebooks can be run individually using Jupyter. To run the scripts from command line edit the notebooks using Jupyter and run:
+
+    ./script/execute_notebook.py
+   and select the notebook to run. The results are stored in results/notebook_name.log
+   
+   
+P0 Predict Test WAV.ipynb can be used to predict audio files using a trained graphdef model.
 
 This will open the Jupyter Notebook software and project file in your web browser.
 
-### Data
+### Training
 
-The dataset used in this project is included as `titanic_data.csv`. This dataset is provided by Udacity and contains the following attributes:
-
-**Features**
-- `` :  
-- `` : 
-- `` : 
-- `` : 
-- `` : 
-- `` : 
-- `` : 
-- `` : 
-- `` : 
-- `` : 
-
-**Target Variable**
-- `` : (0 = No; 1 = Yes)
+The model was trained using a GCP instance with the following specifications:
+- NVIDIA Tesla P100 X 1
+- 16 GB RAM 
+- 35 GB SSD
 
 # Note
 If there is any issue running the code, please post it in the issue tracker.
