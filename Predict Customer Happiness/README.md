@@ -23,7 +23,7 @@ Code is provided in the notebook `Customer Happiness.ipynb` notebook file. Train
 
 ### Run
 
-In a terminal or command window, navigate to the top-level project directory `` (that contains this README) and run one of the following commands:
+In a terminal or command window, navigate to the top-level project directory (that contains this README) and run one of the following commands:
 
 ```console
 theainerd:~$ jupyter notebook Customer Happiness.ipynb
