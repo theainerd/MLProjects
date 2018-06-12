@@ -43,10 +43,10 @@ This will open the Jupyter Notebook software and project file in your web browse
 
 ### Training
 
-The model was trained using a GCP instance with the following specifications:
+The model was trained using a AWS instance with the following specifications:
 - NVIDIA Tesla P100 X 1
 - 16 GB RAM 
-- 35 GB SSD
+- 30 GB SSD
 
 # Note
 If there is any issue running the code, please post it in the issue tracker.
